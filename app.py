@@ -13,6 +13,21 @@ app = Flask(__name__)
 @app.route('/home')
 def homepage():
 	return render_template('home.html')
+@app.route('/login')
+def loginpage():
+	return render_template('login.html')
+@app.route('/signup')
+def signuppage():
+	return render_template('signup.html')
+@app.route('/about'):
+def about_page():
+	return render_template('about.html')
+@app.route('/members'):
+def members():
+	return render_template('member.html')
+@app.route('/signedup')
+def signedup():
+	return render_template('signedup.html')
 
 # TODO: route to /register
 
