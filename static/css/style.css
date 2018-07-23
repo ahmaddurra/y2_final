@@ -1,4 +1,23 @@
 
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bg {
+  /* The image used */
+  background-image:  url("../thumb.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -9,6 +28,7 @@ ul {
 .navigation {
     float: right;
 }
+
 li {
   float: left;
 }
@@ -34,7 +54,9 @@ a {
   color: #B0E0E6;
 }
 
-
+#home{
+  float:right;
+}
 
 .topnav{
   background-color:#000080;

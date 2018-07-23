@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import dataset, random, os
 
+
 app = Flask(__name__)
+app.debug=True
 #app.secret_key = urandom(24)
 
 # TODO: set up database
@@ -10,7 +12,6 @@ app = Flask(__name__)
 
   
 @app.route('/')
-@app.route('/home')
 def homepage():
 	return render_template('home.html')
 @app.route('/login')
@@ -19,10 +20,10 @@ def loginpage():
 @app.route('/signup')
 def signuppage():
 	return render_template('signup.html')
-@app.route('/about'):
+@app.route('/about')
 def about_page():
 	return render_template('about.html')
-@app.route('/members'):
+@app.route('/members')
 def members():
 	return render_template('member.html')
 @app.route('/signedup')

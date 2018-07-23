@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="{{url_for('static',filename='style.css') }}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
   <title>My Final Project</title> 
   
    
@@ -9,20 +9,20 @@
   
 </head>
 <div class="topnav">
-
 <ul>
-<li class="logo"><h1 style="margin:0;font-size:20px;padding: 14px 16px;"> AHMAD DURRA </h1></li>
-<li class = "navigation"><a href="/achievements/">ACHIEVEMENTS</a></li>
-<li class = "navigation"><a href="/hobbies/">HOBBIES</a></li>
-<li class = "navigation"><a href="/about/">ABOUT</a></li>
-<li class = "navigation"><a href="/">SIGN IN</a></li>
-<li class = "navigation"><a href="/contactme">LOG IN</a></li>
+
+<li class = "navigation" id = "home"><a href= "/">HOME</a></li>`
+<li class = "navigation"><a href="/about">ABOUT</a></li>
+<li class = "navigation"><a href="/signup">SIGN UP</a></li>
+<li class = "navigation"><a href="/login">LOG IN</a></li>
 
 </ul>
 </div>
-<body>
 
+
+<body>
 {% block body %}
 {% endblock%}
 </body>
+
 </html>
