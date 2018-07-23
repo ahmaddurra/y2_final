@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+<link rel="stylesheet" href="{{url_for('static',filename='style.css') }}">
   <title>My Final Project</title> 
-  <ul>
-    <li><a href="home">Home</a></li>
+  
+   
 <!-- TODO: add more links on the navigation bar here -->
-  </ul>
+  
 </head>
+<div class="topnav">
+
+<ul>
+<li class="logo"><h1 style="margin:0;font-size:20px;padding: 14px 16px;"> AHMAD DURRA </h1></li>
+<li class = "navigation"><a href="/achievements/">ACHIEVEMENTS</a></li>
+<li class = "navigation"><a href="/hobbies/">HOBBIES</a></li>
+<li class = "navigation"><a href="/about/">ABOUT</a></li>
+<li class = "navigation"><a href="/">SIGN IN</a></li>
+<li class = "navigation"><a href="/contactme">LOG IN</a></li>
+
+</ul>
+</div>
 <body>
+
 {% block body %}
 <h1>My home page</h1>
 
